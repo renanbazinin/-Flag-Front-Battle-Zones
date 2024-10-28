@@ -44,7 +44,7 @@
 ## Installation
 1. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/flag-front-battle-zones.git
+git clone https://github.com/renanbazinin/flag-front-battle-zones.git
 ```
 2. Open `index.html` in a web browser to play.
 
