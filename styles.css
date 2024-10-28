@@ -1,0 +1,152 @@
+body {
+    margin: 0;
+    overflow: hidden;
+    font-family: Arial, sans-serif;
+}
+
+#gameCanvas {
+    display: none; /* Hide canvas initially */
+    touch-action: none; /* Prevent touch scrolling */
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+#mainMenu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #1a1a1a;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#mainMenu h1 {
+    font-size: 48px;
+    margin-bottom: 40px;
+}
+
+#mainMenu button {
+    padding: 15px 30px;
+    font-size: 24px;
+    margin: 10px;
+    cursor: pointer;
+    background-color: #444;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+#mainMenu button:hover {
+    background-color: #555;
+}
+
+#topUI {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: white;
+    display: none; /* Will be displayed when game starts */
+}
+
+#bottomUI {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(50, 50, 50, 0.9);
+    color: white;
+    display: none; /* Will be displayed when game starts */
+    flex-direction: column;
+}
+
+#uiButtons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 10px;
+}
+
+#actionButtons, #otherButtons {
+    display: flex;
+}
+
+#actionButtons button, #otherButtons button {
+    margin: 5px;
+    padding: 10px 15px;
+    font-size: 16px;
+    background-color: #666;
+    border: none;
+    cursor: pointer;
+    color: white;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+}
+
+#actionButtons button:hover, #otherButtons button:hover {
+    background-color: #777;
+}
+
+#actionButtons img, #otherButtons img {
+    width: 24px;
+    height: 24px;
+    margin-right: 5px;
+}
+
+#unitStatsTable {
+    width: 100%;
+    table-layout: fixed;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#unitStatsTable td {
+    text-align: center;
+    padding: 10px;
+    border-right: 1px solid white;
+}
+
+#unitStatsTable td:last-child {
+    border-right: none;
+}
+
+#statsPanel {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: rgba(0,0,0,0.7);
+    color: white;
+    padding: 10px;
+    display: none;
+}
+
+button:focus {
+    outline: none;
+}
+
+@media screen and (max-width: 600px) {
+    #mainMenu h1 {
+        font-size: 32px;
+    }
+    #mainMenu button {
+        padding: 10px 20px;
+        font-size: 18px;
+    }
+    #actionButtons button, #otherButtons button {
+        padding: 8px 10px;
+        font-size: 14px;
+    }
+    #topUI {
+        font-size: 16px;
+    }
+}

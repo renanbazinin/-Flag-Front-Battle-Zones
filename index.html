@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Flag Front: Battle Zones</title>
+    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <!-- Main Menu -->
+    <div id="mainMenu">
+        <h1>Flag Front: Battle Zones</h1>
+        <button id="easyButton">Easy</button>
+        <button id="normalButton">Normal</button>
+        <button id="hardButton">Hard</button>
+        <button id="continueButton" disabled>Continue Game</button>
+    </div>
+
+    <!-- Game Canvas -->
+    <canvas id="gameCanvas"></canvas>
+
+    <!-- Top UI (Gold Display and Stats) -->
+    <div id="topUI">
+        <span id="goldDisplay">Gold: 0</span>
+        <!-- Additional stats can be added here -->
+    </div>
+
+    <!-- Bottom UI -->
+    <div id="bottomUI">
+        <div id="uiButtons">
+            <!-- Action Buttons -->
+            <div id="actionButtons">
+                <button id="createUnitButton">
+                    <img src="unit_icon.png" alt="Create Unit" /> Create Unit (50 Gold)
+                </button>
+                <button id="buildFarmButton">
+                    <img src="farm_icon.jpeg" alt="Build Farm" /> Build Farm (100 Gold)
+                </button>
+            </div>
+            <!-- Other UI Buttons -->
+            <div id="otherButtons">
+                <button id="pauseButton">Pause Game</button>
+                <button id="mainMenuButton">Main Menu</button>
+                <button id="autoAttackButton">Auto Attack: ON</button>
+            </div>
+        </div>
+        <table id="unitStatsTable">
+            <tr id="unitStatsRow">
+                <!-- Unit stats will be dynamically populated here -->
+            </tr>
+        </table>
+    </div>
+
+    <!-- Stats Panel -->
+    <div id="statsPanel">
+        <p>APM: <span id="apmDisplay">0</span></p>
+        <p>Units Created: <span id="unitsCreatedDisplay">0</span></p>
+        <p>Units Lost: <span id="unitsLostDisplay">0</span></p>
+        <!-- Add more stats as needed -->
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

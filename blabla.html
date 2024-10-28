@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pixel Racer</title>
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+            background-color: #111;
+        }
+        #gameArea {
+            position: relative;
+            width: 100vw;
+            height: 100vh;
+            overflow: hidden;
+            background: linear-gradient(to bottom, #444, #111);
+        }
+        .car, .obstacle {
+            position: absolute;
+            width: 30px;
+            height: 50px;
+            background-color: red;
+            transform-origin: center;
+        }
+        .car {
+            bottom: 50px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    </style>
+</head>
+<body>
+    <div id="gameArea">
+        <div id="playerCar" class="car"></div>
+    </div>
+    <script src="pixelRacer.js"></script>
+</body>
+</html>
