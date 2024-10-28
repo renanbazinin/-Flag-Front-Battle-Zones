@@ -17,10 +17,10 @@
 
 ## How to Play
 1. **Select Difficulty**: Choose from Easy, Normal, or Hard.
-2. **Deploy Units**: Use resources to create melee, ranged, or special flag-carrying units.
+2. **Deploy Units**: Use resources to create melee, ranged, or special flag-carrying units. (currently only melee...)
 3. **Capture Zones**: Expand your controlled area and increase resource production.
 4. **Defend and Attack**: Keep your flag carrier safe while trying to capture the enemy’s.
-5. **Win Condition**: Destroy the enemy base or flag carrier to win.
+5. **Win Condition**: Destroy the enemy base.....
 
 ---
 
