@@ -57,5 +57,3 @@ git clone https://github.com/renanbazinin/flag-front-battle-zones.git
 
 ---
 
-## License
-This project is licensed under the MIT License.
