@@ -6,6 +6,13 @@
 
 ---
 
+## Getting Started
+1. **Ener here and enjoy**
+
+🌐 [**Enter Site**](https://renanbazinin.github.io/-Flag-Front-Battle-Zones/)  
+
+---
+
 ## Features
 - **Territory Control**: Capture zones to expand your influence and resource income.
 - **Resource Management**: Build farms to gather resources and deploy more units.
